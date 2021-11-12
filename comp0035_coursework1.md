@@ -3,7 +3,7 @@
 ## Technical information
 ### Repository URL
 Please add the URL to your repository below, then delete this instruction text.
-[Repository]()
+[Repository](https://github.com/ucl-comp0035/coursework-1-XinyaoQian1.git)
 
 ### Set-up instructions
 
@@ -42,7 +42,7 @@ Please add names of your data set files in this repository below, then delete th
 
 ### Data exploration
 
-[Data Exploration]()
+[Data Exploration](exploration.ipynb)
 
 ## Weekly progress reports
 Copy and paste from Moodle or use the following structure. Delete this instruction text.
