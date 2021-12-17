@@ -78,7 +78,7 @@ def test_password_match_is_true_when_correct_password(
       When is_correct_password function is called
       And entered password is '1414314'
       THEN result should return True
-      """
+    """
     match = normal_user_with_birthday.is_correct_password('1414314')
     assert match is True
 
@@ -91,7 +91,7 @@ def test_password_match_is_False_when_wrong_password_entered(
       When is_correct_password function is called
       And entered password is '1234325'
       THEN result should return False
-      """
+    """
     match = normal_user_with_birthday.is_correct_password('1234325')
     assert match is False
 
@@ -101,16 +101,16 @@ def test_email_is_not_right_when_user_is_created(normal_user_with_birthday):
       GIVEN user email is '73891273'
       When a new user is created
       THEN an exception should raise indicating a wrong format
-      """
+    """
     with pytest.raises(Exception) as exp:
         normal_user_with_birthday.email = '73891273'
 
 
 def test_name_is_invalid_when_containing_number(user_name_with_number):
-    '''
+    """
     GIVEN a user first_name is '123' and last_name is '123123'
     WHEN the user is created
      THEN an exception should raise indicating a wrong format of name
-    '''
+    """
     with pytest.raises(Exception) as exp:
         user_name_with_number.first_name = '123'
